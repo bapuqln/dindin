@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "D7A12D10-9F1E-4290-85E0-07A54933A9D5"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "AAA8231D-28B7-498E-8DCC-762B428E8AAA"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FoodDevlivery/Services/FDRequestAPI.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "45"
+            endingLineNumber = "45"
+            landmarkName = "headers"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5A79A139-79F7-40BB-8119-0113CB2DCD1E"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FoodDevlivery/Home/FDHomeView/FDMenuTableViewAdapter.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "46"
+            endingLineNumber = "46"
+            landmarkName = "bind(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "33EFC46E-F0C9-419A-9E7B-E484B00F4F36"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FoodDevlivery/Cart/FDCartTableAdapter.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "45"
+            endingLineNumber = "45"
+            landmarkName = "bind(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "33EFC46E-F0C9-419A-9E7B-E484B00F4F36 - 45c4e30f4a68b86a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "FoodDevlivery.FDCartTableAdapter.bind(Swift.Optional&lt;FoodDevlivery.FDCartPresenterProtocol&gt;) -&gt; ()"
+                  moduleName = "FoodDevlivery"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/weiwei.wang/Desktop/DinDinn/FoodDevlivery/FoodDevlivery/Cart/FDCartTableAdapter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "45"
+                  endingLineNumber = "45"
+                  offsetFromSymbolStart = "105">
+               </Location>
+               <Location
+                  uuid = "33EFC46E-F0C9-419A-9E7B-E484B00F4F36 - 7b7c368ee4cde88d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "implicit closure #2 (RxSwift.Observable&lt;Swift.Array&lt;FoodDevlivery.FDCartItemEntityProtocol&gt;&gt;) -&gt; ((__C.UITableView, Swift.Int, FoodDevlivery.FDCartItemEntityProtocol) -&gt; __C.UITableViewCell) -&gt; RxSwift.Disposable in implicit closure #1 (RxSwift.Reactive&lt;__C.UITableView&gt;) -&gt; (RxSwift.Observable&lt;Swift.Array&lt;FoodDevlivery.FDCartItemEntityProtocol&gt;&gt;) -&gt; ((__C.UITableView, Swift.Int, FoodDevlivery.FDCartItemEntityProtocol) -&gt; __C.UITableViewCell) -&gt; RxSwift.Disposable in FoodDevlivery.FDCartTableAdapter.bind(Swift.Optional&lt;FoodDevlivery.FDCartPresenterProtocol&gt;) -&gt; ()"
+                  moduleName = "FoodDevlivery"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/weiwei.wang/Desktop/DinDinn/FoodDevlivery/FoodDevlivery/Cart/FDCartTableAdapter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "45"
+                  endingLineNumber = "45"
+                  offsetFromSymbolStart = "44">
+               </Location>
+               <Location
+                  uuid = "33EFC46E-F0C9-419A-9E7B-E484B00F4F36 - c4e7fda22c01f154"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (__C.UITableView, Swift.Int, FoodDevlivery.FDCartItemEntityProtocol) -&gt; __C.UITableViewCell in FoodDevlivery.FDCartTableAdapter.bind(Swift.Optional&lt;FoodDevlivery.FDCartPresenterProtocol&gt;) -&gt; ()"
+                  moduleName = "FoodDevlivery"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/weiwei.wang/Desktop/DinDinn/FoodDevlivery/FoodDevlivery/Cart/FDCartTableAdapter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "46"
+                  endingLineNumber = "46"
+                  offsetFromSymbolStart = "150">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
