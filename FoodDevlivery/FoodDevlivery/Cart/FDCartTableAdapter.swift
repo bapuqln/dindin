@@ -44,7 +44,7 @@ class FDCartTableAdapter: NSObject {
     func bind(_ presenter: FDCartPresenterProtocol?) {
         presenter?.cartItem.asObservable().bind(to:self.tableView.rx.items) { (tableView, row, element) in
             let cell = tableView.dequeueReusableCell(withIdentifier: FDCartItemCell.identifier) as! FDCartItemCell
-            cell.configCell(with: element)
+            cell.updateCell(with: element)
             return cell
         }.disposed(by: disposeBag)
     }

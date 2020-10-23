@@ -21,9 +21,9 @@ struct FDHomeMenuEntity: FDHomeMenuEntityProtocol {
     
     var prices: Int? { return menuEntity.price }
     
-    var menuEntity: FDMenuResponseEntity.Menu
+    var menuEntity: FDMenuResponse.Menu
     
-    init(_ menu: FDMenuResponseEntity.Menu) {
+    init(_ menu: FDMenuResponse.Menu) {
         self.menuEntity = menu
     }
 }

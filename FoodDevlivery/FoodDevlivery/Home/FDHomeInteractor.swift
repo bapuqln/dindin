@@ -11,13 +11,13 @@
 import UIKit
 
 class FDHomeInteractor: FDHomeInteractorProtocol {
-    var fetchedMenu: [FDMenuResponseEntity.Menu] = []
+    var fetchedMenu: [FDMenuResponse.Menu] = []
     
     weak var presenter: FDHomePresenterProtocol?
     
     func fetchMenu() {
         FDNetworkingService.shared().fetchMenu { (result) in
-            if result.success, let menus = result.responseData as? FDMenuResponseEntity, let menu = menus.menu {
+            if result.success, let menus = result.responseData as? FDMenuResponse, let menu = menus.menu {
                 self.presenter?.onMenuFetched( menu.map { FDHomeMenuEntity($0) } )
             }
         }

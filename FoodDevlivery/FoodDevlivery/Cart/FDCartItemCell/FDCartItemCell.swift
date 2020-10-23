@@ -1,9 +1,10 @@
 //
-//  FDCarditemCell.swift
+//  FDCartItemCell.swift
 //  FoodDevlivery
 //
-//  Created by ACE_xW on 20/10/2020.
+//  Created by ACE_xW on 24/10/2020.
 //
+
 
 import RxSwift
 import UIKit
@@ -24,10 +25,10 @@ class FDCartItemCell: UITableViewCell{
 }
 
 
-extension FDCartItemCell: FDCellConfigProtocol {
+extension FDCartItemCell: FDCellUpdateProtocol {
     typealias CellEntity = FDCartItemEntityProtocol
 
-    func configCell(with entity: FDCartItemEntityProtocol) {
+    func updateCell(with entity: FDCartItemEntityProtocol) {
         itemImage.fd_imageFrom(entity.imgURL ?? "")
         itemName.text = entity.name
         itemPrices.text = "\(entity.price ?? 0) usd"

@@ -14,14 +14,13 @@ import RxCocoa
 
 class FDCartPresenter: FDCartPresenterProtocol {
     
-    var menus = BehaviorRelay<[FDMenuResponseEntity.Menu]>(value: [])
     var cartItem = BehaviorRelay<[FDCartItemEntityProtocol]>(value: [])
 
     weak private var view: FDCartViewProtocol?
     var interactor: FDCartInteractorProtocol?
     private let router: FDCartWireframeProtocol
     
-    private var cartList:[FDMenuResponseEntity.Menu] = []
+    private var cartList:[FDMenuResponse.Menu] = []
     
     private let disposeBag = DisposeBag()
 
@@ -31,8 +30,7 @@ class FDCartPresenter: FDCartPresenterProtocol {
         self.router = router
     }
     
-    func loadCartItems() {
-//        cartItem.accept(cartList)
-//        menuList.accept(cartList.map { FDCartItemEntity(menu: $0) })
+    func onViewDidload() {
+
     }
 }

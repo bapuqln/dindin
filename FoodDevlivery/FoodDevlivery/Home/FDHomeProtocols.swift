@@ -30,7 +30,7 @@ protocol FDHomeWireframeProtocol: class {
 protocol FDHomePresenterProtocol: class {
     var interactor: FDHomeInteractorProtocol? { get set }
 
-    var addItem: PublishSubject<FDMenuResponseEntity.Menu>{get}
+    var addItem: PublishSubject<FDMenuResponse.Menu>{get}
     var itemsCount: BehaviorRelay<String>{get}
     
     var menuLists: BehaviorRelay<[FDHomeMenuEntityProtocol]>{get}
@@ -44,7 +44,7 @@ protocol FDHomePresenterProtocol: class {
 //MARK: Interactor -
 protocol FDHomeInteractorProtocol: class {
     var presenter: FDHomePresenterProtocol?  { get set }
-    var fetchedMenu: [FDMenuResponseEntity.Menu] { get }
+    var fetchedMenu: [FDMenuResponse.Menu] { get }
     func fetchMenu()
     func fetchBanners()
 }

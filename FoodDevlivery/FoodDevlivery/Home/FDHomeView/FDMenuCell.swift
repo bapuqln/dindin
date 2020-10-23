@@ -38,10 +38,10 @@ class FDMenuCell: UITableViewCell {
 }
 
 
-extension FDMenuCell: FDCellConfigProtocol {
+extension FDMenuCell: FDCellUpdateProtocol {
     typealias CellEntity = FDHomeMenuEntityProtocol
     
-    func configCell(with entity: FDHomeMenuEntityProtocol) {
+    func updateCell(with entity: FDHomeMenuEntityProtocol) {
         menuImage.fd_imageFrom(entity.imageUrl ?? "")
         menuImage.contentMode = .scaleToFill
         menuName.text = entity.name

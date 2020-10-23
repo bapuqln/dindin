@@ -26,14 +26,8 @@ class FDHomeViewController: UIViewController, FDHomeViewProtocol {
     @IBOutlet weak var cartButton: UIButton!
     @IBOutlet weak var cartItem: UILabel!
     
-    
     @IBAction func catBtnPressed(_ sender: Any) {
         self.presenter?.showCart()
-    }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        setNeedsStatusBarAppearanceUpdate()
     }
     
     override func viewDidLoad() {
@@ -73,9 +67,7 @@ extension FDHomeViewController {
             }
             offset += UIScreen.main.bounds.width
         })
-//        self.bannerScrollView.snp.remakeConstraints {
-//            $0.width.equalTo(offset)
-//        }
+
         self.bannerScrollView.contentSize = CGSize(width: offset, height: self.bannerScrollView.bounds.height)
         self.bannerPageControl.numberOfPages = entity.banner?.count ?? 0
         self.bannerPageControl.currentPage = 0

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2315FC612543907900F40777 /* FDEntityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2315FC602543907900F40777 /* FDEntityManager.swift */; };
 		2319CC8E253D980500D177D2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2319CC8D253D980500D177D2 /* AppDelegate.swift */; };
 		2319CC90253D980500D177D2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2319CC8F253D980500D177D2 /* SceneDelegate.swift */; };
 		2319CC92253D980500D177D2 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2319CC91253D980500D177D2 /* MainViewController.swift */; };
@@ -36,12 +37,12 @@
 		234AA954253EDED7004FB68A /* FDMenuTableViewAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234AA953253EDED7004FB68A /* FDMenuTableViewAdapter.swift */; };
 		234AA985253F0344004FB68A /* FDExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234AA984253F0344004FB68A /* FDExtension.swift */; };
 		234AA98D253F0412004FB68A /* FDRequestAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234AA98C253F0412004FB68A /* FDRequestAPI.swift */; };
-		234AA992253F06CD004FB68A /* FDMenuResponseEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234AA991253F06CD004FB68A /* FDMenuResponseEntity.swift */; };
+		234AA992253F06CD004FB68A /* FDMenuResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234AA991253F06CD004FB68A /* FDMenuResponse.swift */; };
 		234AA997253F06D7004FB68A /* FDBannerResponseEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234AA996253F06D7004FB68A /* FDBannerResponseEntity.swift */; };
 		2376CEAA25435373000A02C1 /* FDMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2376CEA825435373000A02C1 /* FDMenuCell.swift */; };
 		2376CEAB25435373000A02C1 /* FDMenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2376CEA925435373000A02C1 /* FDMenuCell.xib */; };
 		2376CEBD25435B7B000A02C1 /* FDCartItemEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2376CEBC25435B7B000A02C1 /* FDCartItemEntity.swift */; };
-		2376CEC525435D8D000A02C1 /* FDCellConfigProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2376CEC425435D8D000A02C1 /* FDCellConfigProtocol.swift */; };
+		2376CEC525435D8D000A02C1 /* FDCellUpdateProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2376CEC425435D8D000A02C1 /* FDCellUpdateProtocol.swift */; };
 		2376CED5254360A3000A02C1 /* FDCartItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2376CED3254360A3000A02C1 /* FDCartItemCell.xib */; };
 		2376CED6254360A3000A02C1 /* FDCartItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2376CED4254360A3000A02C1 /* FDCartItemCell.swift */; };
 		2376CEE7254378E2000A02C1 /* banner.json in Resources */ = {isa = PBXBuildFile; fileRef = 2376CEE6254378E2000A02C1 /* banner.json */; };
@@ -69,6 +70,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2315FC602543907900F40777 /* FDEntityManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FDEntityManager.swift; sourceTree = "<group>"; };
 		2319CC8A253D980500D177D2 /* FoodDevlivery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodDevlivery.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2319CC8D253D980500D177D2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2319CC8F253D980500D177D2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -100,12 +102,12 @@
 		234AA953253EDED7004FB68A /* FDMenuTableViewAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FDMenuTableViewAdapter.swift; sourceTree = "<group>"; };
 		234AA984253F0344004FB68A /* FDExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FDExtension.swift; sourceTree = "<group>"; };
 		234AA98C253F0412004FB68A /* FDRequestAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FDRequestAPI.swift; sourceTree = "<group>"; };
-		234AA991253F06CD004FB68A /* FDMenuResponseEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FDMenuResponseEntity.swift; sourceTree = "<group>"; };
+		234AA991253F06CD004FB68A /* FDMenuResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FDMenuResponse.swift; sourceTree = "<group>"; };
 		234AA996253F06D7004FB68A /* FDBannerResponseEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FDBannerResponseEntity.swift; sourceTree = "<group>"; };
 		2376CEA825435373000A02C1 /* FDMenuCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FDMenuCell.swift; sourceTree = "<group>"; };
 		2376CEA925435373000A02C1 /* FDMenuCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FDMenuCell.xib; sourceTree = "<group>"; };
 		2376CEBC25435B7B000A02C1 /* FDCartItemEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FDCartItemEntity.swift; sourceTree = "<group>"; };
-		2376CEC425435D8D000A02C1 /* FDCellConfigProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FDCellConfigProtocol.swift; sourceTree = "<group>"; };
+		2376CEC425435D8D000A02C1 /* FDCellUpdateProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FDCellUpdateProtocol.swift; sourceTree = "<group>"; };
 		2376CED3254360A3000A02C1 /* FDCartItemCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FDCartItemCell.xib; sourceTree = "<group>"; };
 		2376CED4254360A3000A02C1 /* FDCartItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FDCartItemCell.swift; sourceTree = "<group>"; };
 		2376CEE6254378E2000A02C1 /* banner.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = banner.json; sourceTree = "<group>"; };
@@ -173,7 +175,7 @@
 				2319CC93253D980500D177D2 /* Main.storyboard */,
 				2319CC98253D980600D177D2 /* LaunchScreen.storyboard */,
 				234AA984253F0344004FB68A /* FDExtension.swift */,
-				2376CEC425435D8D000A02C1 /* FDCellConfigProtocol.swift */,
+				2376CEC425435D8D000A02C1 /* FDCellUpdateProtocol.swift */,
 				234AA94E253E2C99004FB68A /* Services */,
 				234AA99B253F073F004FB68A /* Entity */,
 				234AA902253E1CDB004FB68A /* Cart */,
@@ -246,10 +248,11 @@
 		234AA99B253F073F004FB68A /* Entity */ = {
 			isa = PBXGroup;
 			children = (
-				234AA991253F06CD004FB68A /* FDMenuResponseEntity.swift */,
+				234AA991253F06CD004FB68A /* FDMenuResponse.swift */,
 				23FEA0F525404C3A00CA171E /* FDHomeMenuEntity.swift */,
 				234AA996253F06D7004FB68A /* FDBannerResponseEntity.swift */,
 				2376CEBC25435B7B000A02C1 /* FDCartItemEntity.swift */,
+				2315FC602543907900F40777 /* FDEntityManager.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -427,7 +430,7 @@
 				2376CEBD25435B7B000A02C1 /* FDCartItemEntity.swift in Sources */,
 				234AA938253E1FAD004FB68A /* FDCartInteractor.swift in Sources */,
 				23FEA0F625404C3A00CA171E /* FDHomeMenuEntity.swift in Sources */,
-				2376CEC525435D8D000A02C1 /* FDCellConfigProtocol.swift in Sources */,
+				2376CEC525435D8D000A02C1 /* FDCellUpdateProtocol.swift in Sources */,
 				234AA928253E1F91004FB68A /* FDHomeProtocols.swift in Sources */,
 				2319CC92253D980500D177D2 /* MainViewController.swift in Sources */,
 				234AA934253E1FAD004FB68A /* FDCartPresenter.swift in Sources */,
@@ -445,7 +448,8 @@
 				234AA94A253E2C82004FB68A /* FDNeworkService.swift in Sources */,
 				234AA936253E1FAD004FB68A /* FDCartViewController.swift in Sources */,
 				234AA929253E1F91004FB68A /* FDHomeInteractor.swift in Sources */,
-				234AA992253F06CD004FB68A /* FDMenuResponseEntity.swift in Sources */,
+				2315FC612543907900F40777 /* FDEntityManager.swift in Sources */,
+				234AA992253F06CD004FB68A /* FDMenuResponse.swift in Sources */,
 				234AA954253EDED7004FB68A /* FDMenuTableViewAdapter.swift in Sources */,
 				234AA985253F0344004FB68A /* FDExtension.swift in Sources */,
 			);

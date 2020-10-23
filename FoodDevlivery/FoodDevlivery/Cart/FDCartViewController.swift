@@ -31,7 +31,7 @@ class FDCartViewController: UIViewController, FDCartViewProtocol {
 	override func viewDidLoad() {
         super.viewDidLoad()
         self.setupCartTableView()
-        self.presenter?.loadCartItems()
+        self.presenter?.onViewDidload()
     }
 }
 

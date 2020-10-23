@@ -44,7 +44,7 @@ class FDMenuTableViewAdapter: NSObject {
     func bind(_ presenter: FDHomePresenterProtocol?) -> FDMenuTableViewAdapter {
         presenter?.menuLists.asObservable().bind(to:self.tableView.rx.items) { (tableView, row, element) in
             let cell = tableView.dequeueReusableCell(withIdentifier: FDMenuCell.identifier) as! FDMenuCell
-            cell.configCell(with: element)
+            cell.updateCell(with: element)
             cell.menuAdd.rx.tap.subscribe({[unowned self] value in
                 if let food = presenter?.interactor?.fetchedMenu.filter({$0.identifier == element.identifier}).first{
                     presenter?.addItem.onNext(food)

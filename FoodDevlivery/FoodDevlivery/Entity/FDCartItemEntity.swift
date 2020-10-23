@@ -8,18 +8,18 @@
 import Foundation
 
 protocol FDCartItemEntityProtocol {
-    var name: String?{get}
-    var imgURL: String?{get}
-    var price: Int?{get}
+    var name: String? { get }
+    var imgURL: String? { get }
+    var price: Int? { get }
 }
 
 struct FDCartItemEntity: FDCartItemEntityProtocol{
-    var menuItem: FDMenuResponseEntity.Menu
+    var menuItem: FDMenuResponse.Menu
     var name: String? { return menuItem.name }
     var imgURL: String? { return menuItem.imageUrl }
     var price: Int? { return menuItem.price }
     
-    init(menu: FDMenuResponseEntity.Menu) {
+    init(menu: FDMenuResponse.Menu) {
         self.menuItem = menu
     }
 }

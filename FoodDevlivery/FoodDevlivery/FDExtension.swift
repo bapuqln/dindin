@@ -10,7 +10,7 @@ import UIKit
 import SnapKit
 
 public extension String {
-    static let fd_BaseUrl = "https://dindinnfooddeliver.com/"
+    static let fd_BaseUrl = "https://dindinnfd.com/"
     static let fd_path_menu = "menu"
     static let fd_path_banner = "banner"
     static let fd_contentType = "Content-type"
@@ -32,6 +32,10 @@ public extension String {
             return URL(string: "")
         }
         return URL(string: encodeUrlString)
+    }
+    
+    func fd_url() -> URL? {
+        return URL(fileURLWithPath: self)
     }
 }
 
@@ -56,15 +60,4 @@ public extension UIImageView {
             }
         }).resume()
     }
-}
-
-public extension UIButton {
-  func setBackgroundColor(_ color: UIColor, for forState: UIControl.State) {
-    UIGraphicsBeginImageContext(CGSize(width: 1, height: 1))
-    UIGraphicsGetCurrentContext()!.setFillColor(color.cgColor)
-    UIGraphicsGetCurrentContext()!.fill(CGRect(x: 0, y: 0, width: 1, height: 1))
-    let colorImage = UIGraphicsGetImageFromCurrentImageContext()
-    UIGraphicsEndImageContext()
-    self.setBackgroundImage(colorImage, for: forState)
-  }
 }

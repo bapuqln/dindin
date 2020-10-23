@@ -48,8 +48,11 @@ enum FDRequestAPI: TargetType {
     private func mockData(fileName: String) -> Data{
         @objc class TestClass: NSObject{}
         let bundle = Bundle(for: TestClass.self)
-        guard let path = bundle.path(forResource: fileName, ofType: "json") else { return Data() }
-        return (try? Data(contentsOf: URL(fileURLWithPath: path))) ?? Data()
+        guard let file = bundle.path(forResource: fileName, ofType: "json"),
+              let url = file.fd_url() else {
+            return Data()
+        }
+        return (try? Data(contentsOf: url)) ?? Data()
     }
 }
 

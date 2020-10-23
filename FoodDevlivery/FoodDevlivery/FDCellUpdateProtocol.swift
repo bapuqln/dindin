@@ -7,8 +7,8 @@
 
 import Foundation
 
-protocol FDCellConfigProtocol {
+protocol FDCellUpdateProtocol {
     associatedtype CellEntity
     
-    func configCell(with entity: CellEntity)
+    func updateCell(with entity: CellEntity)
 }

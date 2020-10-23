@@ -8,7 +8,7 @@
 import Foundation
 import ObjectMapper
 
-struct FDMenuResponseEntity: Mappable {
+struct FDMenuResponse: Mappable {
     var menu: [Menu]?
     
     init?(map: Map) {}

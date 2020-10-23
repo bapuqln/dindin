@@ -17,14 +17,14 @@ class FDHomePresenter: FDHomePresenterProtocol {
     public var interactor: FDHomeInteractorProtocol?
     private let router: FDHomeWireframeProtocol
     
-    var addItem = PublishSubject<FDMenuResponseEntity.Menu>()
-    var listItems = BehaviorRelay<[FDMenuResponseEntity.Menu]>(value: [])
+    var addItem = PublishSubject<FDMenuResponse.Menu>()
+    var listItems = BehaviorRelay<[FDMenuResponse.Menu]>(value: [])
     var itemsCount = BehaviorRelay<String>(value: "")
     var menuLists = BehaviorRelay<[FDHomeMenuEntityProtocol]>(value: [])
     
     private let disposeBag = DisposeBag()
     
-    private var items: [FDMenuResponseEntity.Menu] = []
+    private var items: [FDMenuResponse.Menu] = []
     
     init(interface: FDHomeViewProtocol, interactor: FDHomeInteractorProtocol?, router: FDHomeWireframeProtocol) {
         self.view = interface

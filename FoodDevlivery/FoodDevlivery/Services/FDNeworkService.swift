@@ -24,12 +24,6 @@ public class FDNetworkingService {
         var errorInfo: String?
         var responseData: Any?
         
-//        public init() {
-//            self.success = false
-//            self.errorInfo = nil
-//            self.responseData = nil
-//        }
-        
         public init(_ errorInfo: String) {
             self.success = false
             self.errorInfo = errorInfo
@@ -61,7 +55,7 @@ public class FDNetworkingService {
             
             guard let data = response.responseData as? Data,
                   let json = try? JSONSerialization.jsonObject(with: data, options: .mutableLeaves) as? [String: Any],
-                  let menuEntity: FDMenuResponseEntity = Mapper<FDMenuResponseEntity>().map(JSON: json) else {
+                  let menuEntity: FDMenuResponse = Mapper<FDMenuResponse>().map(JSON: json) else {
                 completion(RequestResult("error occur"))
                 return
             }

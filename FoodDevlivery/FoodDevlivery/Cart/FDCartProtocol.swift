@@ -18,10 +18,9 @@ protocol FDCartWireframeProtocol: class {
 }
 //MARK: Presenter -
 protocol FDCartPresenterProtocol: class {
-    var menus: BehaviorRelay<[FDMenuResponseEntity.Menu]> { get }
     var cartItem: BehaviorRelay<[FDCartItemEntityProtocol]>{ get }
     
-    func loadCartItems()
+    func onViewDidload()
 }
 
 //MARK: Interactor -
